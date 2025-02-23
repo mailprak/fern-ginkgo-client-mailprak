@@ -3,7 +3,7 @@ package client_test
 import (
 	"time"
 
-	"github.com/guidewire/fern-ginkgo-client/pkg/client"
+	"fern-ginkgo-client-mailprak/pkg/client"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 )
