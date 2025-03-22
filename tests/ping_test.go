@@ -8,6 +8,7 @@ import (
 	. "github.com/onsi/gomega"
 	"google.golang.org/grpc"
 	pb "fern-ginkgo-client-mailprak/reporter" // Import generated protobuf package
+	cl "fern-ginkgo-client-mailprak/tests"
 )
 
 var _ = Describe("PingService Real Test", func() {
@@ -34,4 +35,10 @@ var _ = Describe("PingService Real Test", func() {
 		Expect(resp).NotTo(BeNil())
 		Expect(resp.Message).To(Equal("Pong"))
 	})
+
+	It("adds two numbers", func() {
+		sum := cl.Add(2, 3)
+		Expect(sum).To(Equal(5))
+	})
 })
+
